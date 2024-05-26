@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  background-color: #333;
+  padding: 0.5rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 0;
+}
+.container h1 {
+  text-align: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+.container form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-field {
+  padding-bottom: 10px;
+  display: flex;
+  font-size: 17px;
+}
+
+.form-field label {
+  width: 15%;
+}
+
+.form-field input,
+textarea {
+  width: 70%;
+  border: none;
+  border-radius: 2px;
+}
+
+.form-field textarea {
+  min-height: 50px;
+  max-height: 50px;
+  min-width: 70%;
+  max-width: 70%;
+  overflow: hidden; /* Hide the scrollbar */
+  overflow-y: scroll; /* Enable vertical scrolling */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.form-field textarea::-webkit-scrollbar {
+  display: none;
+}
+.container form button {
+  font-size: 17px;
+  padding: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.container form button:hover {
+  background-color: #ff4141;
+  color: white;
+}
+
+.form-field input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.form-field input:focus + label,
+textarea:focus + label {
+  color: #ff4141;
+}
